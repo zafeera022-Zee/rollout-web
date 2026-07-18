@@ -1,0 +1,733 @@
+@charset "utf-8";
+
+/* Body */
+
+body{
+	margin:0;
+	padding:0;
+	font-family:Poppins, sans-serif;
+	background-color:midnightblue;
+	color:ghostwhite
+}
+
+/* Header */
+
+#header{
+	width:100%;
+	height:120px;
+	background-color:black;
+	border-bottom:2px solid #000000;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+
+/* Logo */
+
+#logo{
+    width:220px;
+    height:120px;
+    border:2px solid #cc00ff;
+    border-radius:0 0 45px 0;
+    overflow:hidden;
+    padding:0;
+}
+
+#logo img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+
+/* Navigation */
+
+#Navigation{
+	margin-right:90px;
+}
+
+#Navigation a{
+	text-decoration:none;
+	color:#FFFFFF;   
+	font-size:24px;
+	font-weight:bold;
+	margin-left:75px;
+	transition:0.3s;
+}
+
+#Navigation a:hover{
+	color:#2CFBFF;
+	text-shadow:
+	0 0 5px #2CFBFF,
+	0 0 10px #2CFBFF,
+	0 0 20px #2CFBFF;
+}
+
+#Navigation a.active{
+	color:#2CFBFF;
+	text-shadow:
+	0 0 5px #2CFBFF,
+	0 0 10px #2CFBFF,
+	0 0 20px #2CFBFF;
+}
+/* Banner */
+
+#banner{
+    width:90%;
+    margin:15px auto;
+}
+
+#banner img{
+    width:100%;
+    height:120px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+/* Main Photo */
+
+#photo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+#photo img{
+    width:80%;
+    height:500px;
+    object-fit:cover;
+}
+
+.arrow{
+    background:transparent;
+    border:2px solid #cc00ff;
+    color:#cc00ff;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    font-size:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.arrow:hover{
+    background:#cc00ff;
+    color:white;
+}
+
+/* Social Media */
+
+#social{
+	width:90%;
+	margin:40px auto;
+	display:flex;
+	justify-content:space-between;
+}
+
+.socialBox{
+	width:30%;
+	border:2px solid #000000;
+	cursor:pointer;
+	transition:0.3s;
+}
+
+.socialBox img{
+	width:100%;
+	display:block;
+}
+
+.socialBox:hover{
+	box-shadow:
+	0 0 10px #2CFBFF,
+	0 0 20px #2CFBFF;
+	transform:translateY(-5px);
+}
+
+/* About */
+
+#about{
+	width:90%;
+	margin:80px auto;
+}
+
+#aboutTitle{
+	width:260px;
+	margin:auto;
+	text-align:center;
+	border:2px solid #cc00ff;
+	margin-bottom:60px;
+}
+
+#aboutTitle h1{
+	font-size:40px;
+	margin:15px;
+}
+
+#aboutContent{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	gap:80px;
+}
+
+.aboutBox{
+	width:380px;
+	text-align:center;
+}
+
+.aboutBox:last-child{
+	margin:0 auto;
+}
+
+.aboutBox h2{
+	display:inline-block;
+	border-bottom:2px solid #cc00ff;
+	padding-bottom:5px;
+}
+
+.aboutBox p{
+	font-size:20px;
+	line-height:30px;
+}
+ul{
+    color:white;
+    padding-left:25px;
+    font-size:20px;
+    line-height:1.8;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* Games */
+
+#games{
+	width:90%;
+	margin:80px auto;
+}
+
+/* Schedule */
+
+#schedule{
+	width:90%;
+	margin:80px auto;
+}
+
+/* FAQ */
+
+#faqPage{
+	width:90%;
+	margin:60px auto;
+}
+
+#faqPage h1{
+	display:inline-block;
+	border-bottom:2px solid black;
+	margin-bottom:40px;
+}
+
+.question{
+	width:100%;
+	padding:18px 25px;
+	margin-top:20px;
+	background:#FFFFFF;
+	border:2px solid black;
+	border-radius:35px;
+	font-size:24px;
+	font-weight:bold;
+	text-align:left;
+	cursor:pointer;
+	transition:0.3s;
+}
+
+.question:hover{
+	color:#2CFBFF;
+	box-shadow:0 0 10px #2CFBFF;
+}
+
+.answer{
+	display:none;
+	border-left:3px solid #2CFBFF;
+	margin:10px 20px 30px 20px;
+	padding:15px 20px;
+	font-size:18px;
+	line-height:30px;
+	color:black;
+}
+
+/* Contact */
+
+#contact{
+	width:90%;
+	margin:80px auto;
+}
+
+#games h1,
+#schedule h1,
+#faq h1,
+#contact h1{
+	display:inline-block;
+	border-bottom:2px solid #000000;
+	padding-bottom:5px;
+}
+
+#games p,
+#schedule p,
+#faq p,
+#contact p{
+	font-size:18px;
+	line-height:30px;
+}
+
+/* Mobile */
+
+@media screen and (max-width:768px){
+
+#header{
+	flex-direction:column;
+	height:auto;
+	padding:20px;
+}
+
+#Navigation{
+	margin:20px 0;
+	text-align:center;
+}
+
+#Navigation a{
+	display:block;
+	margin:15px 0;
+}
+
+#social{
+	flex-direction:column;
+}
+
+.socialBox{
+	width:100%;
+	margin-bottom:20px;
+}
+
+.aboutBox{
+	width:100%;
+}
+
+.aboutBox:last-child{
+	width:100%;
+}
+
+}/* ===========================
+   GAME PAGE
+=========================== */
+
+#gameContainer{
+	width:90%;
+	margin:50px auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+.gameCard{
+	width:46%;
+	margin-bottom:40px;
+	text-decoration:none;
+	color:black;
+	border:2px solid white;
+	border-radius:15px;
+	overflow:hidden;
+	transition:0.3s;
+	background:white;
+}
+
+.gameCard:hover{
+	transform:translateY(-5px);
+	box-shadow:0 0 15px #2CFBFF;
+}
+
+.gameCard{
+    position: relative;
+    width:45%;
+    height:350px;
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.gameImage{
+    width:100%;
+    height:100%;
+}
+
+.gameImage img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+.gameCard h2{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-size:38px;
+    text-align:center;
+    text-shadow:0 0 12px black;
+    margin:0;
+}
+@media screen and (max-width:768px){
+
+.gameCard{
+	width:100%;
+}
+
+}
+/* ===========================
+   STRATEGY / CATEGORY PAGE
+=========================== */
+
+#backButton{
+	width:90%;
+	margin:30px auto;
+}
+
+#backButton a{
+	text-decoration:none;
+	color:#cc00ff;
+	font-size:24px;
+	font-weight:bold;
+	border:2px solid #cc00ff;
+	padding:10px 25px;
+	border-radius:10px;
+	transition:0.3s;
+}
+
+#backButton a:hover{
+	color:#2CFBFF;
+	border-color:#2CFBFF;
+	box-shadow:0 0 15px #2CFBFF;
+}
+
+#pageTitle{
+	width:90%;
+	margin:20px auto 50px auto;
+	text-align:center;
+}
+
+#pageTitle h1{
+	display:inline-block;
+	border-bottom:2px solid #cc00ff;
+	padding-bottom:10px;
+	font-size:45px;
+}
+
+#gameList{
+	width:90%;
+	margin:auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+.gameItem{
+	width:48%;
+	margin-bottom:50px;
+}
+
+.gameItem img{
+	width:100%;
+	height:260px;
+	object-fit:cover;
+	border:2px solid black;
+}
+
+.gameItem h2{
+	margin-top:15px;
+	border-bottom:2px solid black;
+	display:inline-block;
+}
+
+.gameItem p{
+	margin-top:15px;
+	line-height:28px;
+}
+
+@media screen and (max-width:768px){
+
+.gameItem{
+	width:100%;
+}
+
+}
+/* ===========================
+   FAMILY / CATEGORY PAGE
+=========================== */
+
+#backButton{
+	width:90%;
+	margin:30px auto;
+}
+
+#backButton a{
+	text-decoration:none;
+	color:#cc00ff;
+	font-size:24px;
+	font-weight:bold;
+	border:2px solid #cc00ff;
+	padding:10px 25px;
+	border-radius:10px;
+	transition:0.3s;
+}
+
+#backButton a:hover{
+	color:#2CFBFF;
+	border-color:#2CFBFF;
+	box-shadow:0 0 15px #2CFBFF;
+}
+
+#pageTitle{
+	width:90%;
+	margin:20px auto 50px auto;
+	text-align:center;
+}
+
+#pageTitle h1{
+	display:inline-block;
+	border-bottom:2px solid #cc00ff;
+	padding-bottom:10px;
+	font-size:45px;
+}
+
+#gameList{
+	width:90%;
+	margin:auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+.gameItem{
+	width:48%;
+	margin-bottom:50px;
+}
+
+.gameItem img{
+	width:100%;
+	height:260px;
+	object-fit:cover;
+	border:2px solid black;
+}
+
+.gameItem h2{
+	margin-top:15px;
+	border-bottom:2px solid #cc00ff;
+	display:inline-block;
+}
+
+.gameItem p{
+	margin-top:15px;
+	line-height:28px;
+}
+
+@media screen and (max-width:768px){
+
+.gameItem{
+	width:100%;
+}
+
+}
+/* ===========================
+   SCHEDULE PAGE
+=========================== */
+
+#schedulePage{
+	width:90%;
+	margin:80px auto;
+}
+
+#scheduleTitle{
+	width:280px;
+	margin:auto;
+	text-align:center;
+	border:2px solid #cc00ff;
+	margin-bottom:60px;
+}
+
+#scheduleContent{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    margin-top:60px;
+}
+
+.scheduleBox{
+    width:48%;
+    border:2px solid #cc00ff;
+    border-radius:20px;
+    padding:30px;
+    background:rgba(255,255,255,0.05);
+}
+
+.scheduleBox h2{
+    color:white;
+    font-size:32px;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.scheduleBox h3{
+    color:#ffb3ff;
+    text-align:center;
+    margin-bottom:25px;
+    border-bottom:2px solid #cc00ff;
+    padding-bottom:10px;
+}
+
+.scheduleBox ul{
+    color:white;
+    font-size:22px;
+    line-height:2;
+    padding-left:25px;
+}
+/* ===========================
+FAQ PAGE
+=========================== */
+
+#faqPage{
+
+width:90%;
+margin:70px auto;
+
+}
+
+#faqPage h1{
+
+margin-bottom:40px;
+display:inline-block;
+border-bottom:2px solid #cc00ff;
+
+}
+
+.question{
+
+width:100%;
+padding:18px;
+margin-top:20px;
+
+font-size:24px;
+font-weight:bold;
+
+text-align:left;
+
+background:white;
+
+border:none;
+border-bottom:2px solid black;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.question:hover{
+
+color:#2CFBFF;
+
+}
+
+.answer{
+
+display:none;
+
+background:white;
+
+border:2px solid black;
+
+border-radius:40px;
+
+padding:25px;
+
+margin-top:10px;
+margin-bottom:20px;
+
+font-size:18px;
+
+line-height:30px;
+
+}
+/* ===========================
+CONTACT PAGE
+=========================== */
+
+#contactPage{
+
+	width:90%;
+	margin:50px auto;
+
+}
+
+#map{
+
+	border:2px solid black;
+	margin-bottom:40px;
+
+}
+
+#map img{
+
+	width:100%;
+	height:auto;
+	object-fit:contain;
+	display:block;
+
+}
+
+#contactInfo{
+
+	display:flex;
+	justify-content:space-between;
+	gap:40px;
+
+}
+
+.contactBox{
+
+	width:48%;
+	border:2px solid #cc00ff;
+	padding:30px;
+	box-sizing:border-box;
+
+}
+
+.contactBox h2{
+
+	display:inline-block;
+	border-bottom:2px solid black;
+	margin-bottom:20px;
+
+}
+
+.contactBox p{
+
+	font-size:18px;
+	line-height:35px;
+
+}
+
+@media screen and (max-width:768px){
+
+#contactInfo{
+
+	flex-direction:column;
+
+}
+
+.contactBox{
+
+	width:100%;
+
+}
+
+}

@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FAQ</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="header">
+
+    <div id="logo">
+
+        <a href="index.html">
+            <img src="images/logo.jpeg" alt="Logo">
+        </a>
+
+    </div>
+
+    <div id="Navigation">
+
+        <a href="ROLL OUT!.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="faq.html" class="active">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+</div>
+
+<div id="faqPage">
+
+    <h1>Frequently Asked Questions</h1>
+
+    <button class="question">
+        What are your opening hours?
+    </button>
+
+    <div class="answer">
+        <p>
+            Registration is open from 8 a.m. to 12 p.m.
+			Event activities continue until 5 p.m.
+        </p>
+
+    </div>
+
+    <button class="question">
+        Do I need to book in advance?
+    </button>
+
+    <div class="answer">
+
+        <p>
+            It is recommended to secure your spot, but walk in participants are welcome while spaces are available.
+        </p>
+
+    </div>
+
+    <button class="question">
+        What payment methods do you accept?
+    </button>
+
+    <div class="answer">
+
+        <p>
+            Credit/debit card, Mastercard, DuitNow QR and Touch 'n Go eWallet. Cash is not accepted.
+        </p>
+
+    </div>
+	
+<button class="question">
+    Can children join the games?
+</button>
+
+<div class="answer">
+    <p>
+        Yes! Our family games are suitable for children aged 6 and above.
+    </p>
+</div>
+
+</div>
+
+<script>
+
+var faq = document.getElementsByClassName("question");
+
+for(var i = 0; i < faq.length; i++){
+
+    faq[i].onclick = function(){
+
+        var answer = this.nextElementSibling;
+
+        if(answer.style.display == "block"){
+
+            answer.style.display = "none";
+
+        }
+        else{
+
+            answer.style.display = "block";
+
+        }
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Roll Out!</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<div id="header">
+
+    <div id="logo">
+        <a href="index.html">
+            <img src="images/logo.jpeg" alt="Logo">
+        </a>
+    </div>
+
+    <div id="Navigation">
+
+        <a href="ROLL OUT!.html" class="active">Home</a>
+        <a href="games.html">Games</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+</div>
+
+<!-- Banner -->
+
+<div id="banner">
+
+    <img src="images/ban.jpeg" alt="ban">
+
+</div>
+
+<!-- Main Photo -->
+
+<div id="photo">
+
+    <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+
+    <img id="mainPhoto" src="https://i.pinimg.com/1200x/95/a2/e7/95a2e73a269089113144435aeb95fd68.jpg" alt="Main Photo">
+
+    <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+
+</div>
+
+<!-- Social Media -->
+
+<div id="social">
+
+    <div class="socialBox" id="instagram">
+        <img src="images/ig.jpeg" alt="ig">
+    </div>
+
+    <div class="socialBox" id="youtube">
+        <img src="images/ytub.jpeg" alt="ytub">
+    </div>
+
+    <div class="socialBox" id="tiktok">
+        <img src="images/t.jpeg" alt="t">
+    </div>
+
+</div>
+
+<!-- About -->
+
+<div id="about">
+
+    <div id="aboutTitle">
+        <h1>ABOUT</h1>
+    </div>
+
+    <div id="aboutContent">
+
+        <div class="aboutBox">
+
+            <h2>What is Roll Out?</h2>
+
+            <p>
+                Imagine touching grass... but with board games. Roll Out! is a one day event where fun, chaos and questionable alliances happen over dice, cards and way too much trash talk.
+            </p>
+
+        </div>
+
+        <div class="aboutBox">
+
+            <h2>Mission</h2>
+
+            <p>
+                To remind everyone that the best multiplayer experience doesn't always need a loading screen.
+            </p>
+
+        </div>
+
+        <div class="aboutBox">
+
+<h2>Why people should come</h2>
+
+<ul>
+    <li>Try games you probably haven't played before.</li>
+    <li>Meet people who are just as competitive as you.</li>
+    <li>Make friends. Make enemies. Rematch later.</li>
+    <li>Take aesthetic photos for your socials.</li>
+    <li>Snacks + games = peak vibes.</li>
+</ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- JavaScript -->
+
+<script>
+const photos = [
+    "https://i.pinimg.com/1200x/95/a2/e7/95a2e73a269089113144435aeb95fd68.jpg",
+    "https://i.pinimg.com/736x/97/74/7a/97747ada6d49a3377c7f2b7175a354f1.jpg",
+    "https://i.pinimg.com/736x/99/3d/63/993d633794153c70aef3bed718d9cb96.jpg"
+];
+
+let current = 0;
+
+function showPhoto(){
+    document.getElementById("mainPhoto").src = photos[current];
+}
+
+function nextSlide(){
+    current++;
+    if(current >= photos.length){
+        current = 0;
+    }
+    showPhoto();
+}
+
+function prevSlide(){
+    current--;
+    if(current < 0){
+        current = photos.length - 1;
+    }
+    showPhoto();
+}
+
+// Instagram
+document.getElementById("instagram").onclick = function(){
+
+window.open("https://www.instagram.com/reel/Da3ADxbsLDO/?utm_source=ig_web_button_share_sheet");
+
+}
+
+// YouTube
+document.getElementById("youtube").onclick = function(){
+
+window.open("https://youtube.com/shorts/d98NtXKRONo?feature=shared");
+
+}
+
+// TikTok
+document.getElementById("tiktok").onclick = function(){
+
+window.open("https://www.tiktok.com/@jonkari.p/video/7602659866431294742?is_from_webapp=1&sender_device=pc");
+
+}
+
+// Navigation Glow
+
+var menu = document.querySelectorAll("#Navigation a");
+
+for(var i=0;i<menu.length;i++){
+
+menu[i].onclick = function(){
+
+for(var j=0;j<menu.length;j++){
+
+menu[j].classList.remove("active");
+
+}
+
+this.classList.add("active");
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
